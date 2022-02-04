@@ -33,6 +33,7 @@ module "vpc" {
 
   tags = {
     "kubernetes.io/cluster/${local.cluster_name}" = "shared"
+    yor_trace                                     = "d278dd39-2690-4cac-bb73-ece3b0c2f982"
   }
 
   public_subnet_tags = {
